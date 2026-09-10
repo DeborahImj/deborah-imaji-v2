@@ -21,12 +21,22 @@
 /* BASE STYLES
 /*******************************************/
 
+@font-face {
+  font-family: 'Circular Std Book';
+  src: url('../assets/fonts/CircularStd-Book.woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
-  --main-bg: #2B2B2B;
+  --main-bg: #000;
 }
 
 body {
   background: var(--main-bg);
+  font-family: 'Circular Std Book', sans-serif;
+  font-size: 1.6rem;
 }
 
 
@@ -47,7 +57,17 @@ body {
   position: fixed;
   right: 0;
   top: 5rem;
-  width: 50%;
+  width: 75%;
+}
+
+.nav-brand {
+  align-items: center;
+  display: flex;
+}
+
+.nav-menu {
+  align-items: center;
+  display: flex;
 }
 
 .nav-burger {
