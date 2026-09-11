@@ -68,14 +68,15 @@ body {
   border-radius: 2rem;
   display: flex;
   font-family: 'D-DIN Condensed', sans-serif;
+  font-size: 0.9rem;
   justify-content: space-between;
   left: 0;
   margin: 0 auto;
-  padding: 2rem 4rem;
+  padding: 1.25rem 3.5rem;
   position: fixed;
   right: 0;
-  top: 5rem;
-  width: 75%;
+  top: 2.5rem;
+  width: 70%;
 }
 
 .nav-brand {
@@ -84,12 +85,13 @@ body {
 }
 
 .nav-brand img {
-  width: 60px;
+  width: 35px;
 }
 
 .nav-menu {
   align-items: center;
   display: flex;
+  gap: 50px;
 }
 
 .navbar a {
@@ -97,8 +99,22 @@ body {
   text-decoration: none;
 }
 
+.navbar a:hover {
+  color: #FFF;
+}
+
 .nav-burger {
+  align-items: center;
   display: none;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+}
+
+.nav-burger span {
+  background: var(--color-gray);
+  height: 2.5px;
+  width: 30px;
 }
 
 .nav-burger-menu {
@@ -106,6 +122,9 @@ body {
 }
 
 @media all and (max-width: 800px) {
+  .nav-menu {
+    display: none;
+  }
   .nav-burger {
     display: flex;
   }
