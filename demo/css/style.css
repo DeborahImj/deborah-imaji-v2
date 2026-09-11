@@ -29,8 +29,25 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'D-DIN Condensed';
+  src: url('../assets/fonts/D-DINCondensed-Bold.woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Mark Pro';
+  src: url('../assets/fonts/MarkPro-Heavy.woff');
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+}
+
 :root {
   --main-bg: #000;
+  --color-gray: #C4C4C4;
 }
 
 body {
@@ -50,6 +67,7 @@ body {
   border: 0.2rem solid #2A2B37;
   border-radius: 2rem;
   display: flex;
+  font-family: 'D-DIN Condensed', sans-serif;
   justify-content: space-between;
   left: 0;
   margin: 0 auto;
@@ -65,9 +83,18 @@ body {
   display: flex;
 }
 
+.nav-brand img {
+  width: 60px;
+}
+
 .nav-menu {
   align-items: center;
   display: flex;
+}
+
+.navbar a {
+  color: var(--color-gray);
+  text-decoration: none;
 }
 
 .nav-burger {
