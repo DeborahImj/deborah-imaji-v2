@@ -40,6 +40,14 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'D-DIN Condensed';
+  src: url('../assets/fonts/D-DINCondensed-Bold.woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 body {
   background: #000;
   font-family: 'Circular Std Book', sans-serif;
@@ -112,6 +120,44 @@ audio {
   top: 0;
   width: 100%;
   z-index: 1;
+}
+
+.preloader__right:before {
+  background-image: linear-gradient(180deg, #10101A 5%, rgba(16,16,26,0) 30%);
+}
+
+.preloader__right:after {
+  background-image: linear-gradient(0deg, #10101A 5%, rgba(16,16,26,0) 30%);
+}
+
+.preloader__text {
+  color: var(--color-white);
+  font-family: 'D-DIN Condensed', sans-serif;
+  font-size: 1.125rem;
+  font-weight: 700;
+  letter-spacing: 0.19em;
+  line-height: 210%;
+  animation: preloaderTextAnim 12s linear infinite;
+  /*animation-delay: 3s;*/
+}
+/*
+@keyframes preloaderTextAnim {
+  0% {
+    transform: translateY(0);
+  } 50%, 100% {
+    transform: translateY(-600%);
+  }
+}
+*/
+
+@keyframes preloaderTextAnim {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    /* Moves exactly halfway through the list (3 items down out of 6) */
+    transform: translateY(-300%);
+  }
 }
 
 /******************************************
