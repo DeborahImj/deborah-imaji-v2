@@ -63,6 +63,57 @@ audio {
   width: 300px;
 }
 
+/* PRELOADER */
+
+.preloader {
+  background: #10101A;
+  display: grid;
+  height: 100vh;
+  left: 0;
+  place-content: center;
+  position: fixed;
+  top: -100vh;
+  width: 100vw;
+  z-index: 129993994;
+}
+
+.preloader.is-inview {
+  top: 0;
+}
+
+.preloader__wrapper {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.preloader__left {
+  margin: 0 1rem 0 0;
+  opacity: 1;
+  transform: none;
+}
+
+.preloader__right {
+  height: 4rem;
+  margin: 0 0 0 1rem;
+  opacity: 1;
+  overflow: hidden;
+  position: relative;
+  transform: none;
+  width: max-content;
+}
+
+.preloader__right:after, .preloader__right:before {
+  content: "";
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
