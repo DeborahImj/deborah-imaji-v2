@@ -1,0 +1,64 @@
+/* Box Model Hack */
+*, :after, :before {
+     box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+:root {
+  --color-white: #FFF;
+  --color-gray: #C4C4C4;
+  --color-black: #000;
+  --color-purple: #8000FF;
+  --color-light-purple: #CF59E6;
+  --color-light-blue: #6BC5F8;
+}
+
+@font-face {
+  font-family: 'Circular Std Book';
+  src: url('../assets/fonts/CircularStd-Book.woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  background: #000;
+  font-family: 'Circular Std Book', sans-serif;
+  font-size: 1.6rem;
+  overflow-x: hidden;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+
+}
+
+footer {
+
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/

@@ -64,7 +64,7 @@ body {
   align-items: center;
   backdrop-filter: blur(104px);
   background: rgba(42,43,56,0.5);
-  border: 0.2rem solid #2A2B37;
+  border: 0.1rem solid #2A2B37;
   border-radius: 2rem;
   display: flex;
   font-family: 'D-DIN Condensed', sans-serif;
@@ -122,11 +122,21 @@ body {
 }
 
 @media all and (max-width: 800px) {
+  .navbar {
+    padding: 1rem;
+    width: 75%;
+  }
+  .nav-brand img {
+    width: 55px;
+  }
+  .nav-brand span {
+    display: none;
+  }
   .nav-menu {
     display: none;
   }
   .nav-burger {
-    display: flex;
+    display: block;
   }
 }
 
