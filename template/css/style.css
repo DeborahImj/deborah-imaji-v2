@@ -157,15 +157,15 @@ audio {
 /* CURSOR */
 
 .cursor {
-  background-image: url('');
+  background-image: url('../assets/images/cursor.png');
   background-repeat: no-repeat;
   background-size: contain;
-  height: 8rem;
+  height: 6rem;
   pointer-events: none;
   position: absolute;
   right: 20%;
   top: 40%;
-  width: 8rem;
+  width: 6rem;
   z-index: 1233333;
   animation: cursorAnim 10s linear infinite;
 }
@@ -176,6 +176,35 @@ audio {
   } 100% {
     transform: rotate(1turn);
   }
+}
+
+@media all and (max-width: 800px) {
+  .cursor {
+    opacity: 0;
+  }
+}
+
+/* NAVIGATION */
+
+.navigation-wrapper {
+  position: relative;
+  z-index: 9999;
+}
+
+.menu-wrapper {
+  background-color: #050810;
+  color: var(--color-white);
+  height: 100vh;
+  left: -100vw;
+  overflow: hidden;
+  overflow-y: scroll;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.menu-wrapper.is-inview {
+  left: 0;
 }
 
 /******************************************
