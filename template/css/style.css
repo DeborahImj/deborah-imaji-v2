@@ -81,6 +81,7 @@ audio {
   place-content: center;
   position: fixed;
   top: -100vh;
+  transition: top 0.8s ease-in-out;
   width: 100vw;
   z-index: 129993994;
 }
@@ -96,9 +97,13 @@ audio {
 }
 
 .preloader__left {
-  margin: 0 1rem 0 0;
+  margin: 0 0.5rem 0 0;
   opacity: 1;
   transform: none;
+}
+
+.preloader__left img {
+  width: 50px;
 }
 
 .preloader__right {
@@ -137,26 +142,39 @@ audio {
   font-weight: 700;
   letter-spacing: 0.19em;
   line-height: 210%;
-  animation: preloaderTextAnim 12s linear infinite;
-  /*animation-delay: 3s;*/
+  animation: preloaderTextAnim 3s linear infinite;
 }
-/*
-@keyframes preloaderTextAnim {
-  0% {
-    transform: translateY(0);
-  } 50%, 100% {
-    transform: translateY(-600%);
-  }
-}
-*/
 
 @keyframes preloaderTextAnim {
   0% {
     transform: translateY(0%);
   }
   100% {
-    /* Moves exactly halfway through the list (3 items down out of 6) */
     transform: translateY(-300%);
+  }
+}
+
+/* CURSOR */
+
+.cursor {
+  background-image: url('');
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 8rem;
+  pointer-events: none;
+  position: absolute;
+  right: 20%;
+  top: 40%;
+  width: 8rem;
+  z-index: 1233333;
+  animation: cursorAnim 10s linear infinite;
+}
+
+@keyframes cursorAnim {
+  0% {
+    transform: rotate(0deg);
+  } 100% {
+    transform: rotate(1turn);
   }
 }
 
