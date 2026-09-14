@@ -241,6 +241,26 @@ audio {
   width: 30rem;
 }
 
+.navigation-top__left--links a {
+  color: var(--color-light-blue);
+  font-family: 'D-DIN Condensed', sans-serif;
+  font-size: 3rem;
+  font-weight: 100;
+  letter-spacing: -0.03em;
+  line-height: 92.4%;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+}
+
+.navigation-top__left--links a:hover {
+  color: var(--color-white);
+}
+
+.navigation-top__right {
+  text-align: inherit;
+}
+
 @media all and (max-width: 800px) {
   .navigation-top {
     align-items: flex-start;
