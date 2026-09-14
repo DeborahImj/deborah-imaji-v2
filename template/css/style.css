@@ -207,6 +207,53 @@ audio {
   left: 0;
 }
 
+.menu-wrapper-inner {
+  /*opacity: 0;*/
+}
+
+.navigation-top {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 25rem auto 0 auto;
+  /*opacity: 0;*/
+  text-align: center;
+  width: 80%;
+}
+
+.navigation-top__left {
+  text-align: inherit;
+}
+
+.navigation-h4 {
+  font-family: 'D-DIN Condensed', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 100;
+  letter-spacing: 0.19em;
+  line-height: 92.4%;
+}
+
+.navigation-top__left--links {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 4rem 0 0 0;
+  width: 30rem;
+}
+
+@media all and (max-width: 800px) {
+  .navigation-top {
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 25rem 0 0 6rem;
+    text-align: left;
+    width: fit-content;
+  }
+  .navigation-top__left {
+    margin-bottom: 10rem;
+  }
+}
+
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
