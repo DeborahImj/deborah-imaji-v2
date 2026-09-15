@@ -102,8 +102,8 @@ body {
 }
 
 .preloader__right {
-  height: 4rem;
-  margin: 0 0 0 1rem;
+  height: 2.3rem;
+  margin: 0 0 0 0.5rem;
   opacity: 1;
   overflow: hidden;
   position: relative;
@@ -136,18 +136,30 @@ body {
   font-size: 1.125rem;
   font-weight: 700;
   letter-spacing: 0.19em;
-  line-height: 210%;
-  animation: preloaderTextAnim 3s linear infinite;
+  line-height: 2.3rem; 
+  height: 2.3rem;
+  margin: 0;
 }
 
-@keyframes preloaderTextAnim {
-  0% {
-    transform: translateY(0%);
+.preloader__track {
+  animation: preloaderCarousel 4.5s cubic-bezier(0.77, 0, 0.175, 1) infinite;
+}
+
+@keyframes preloaderCarousel {
+  0%, 25% {
+    transform: translateY(0);
+  }
+  33%, 58% {
+    transform: translateY(-2.3rem);
+  }
+  66%, 91% {
+    transform: translateY(-4.6rem);
   }
   100% {
-    transform: translateY(-300%);
+    transform: translateY(-6.9rem);
   }
 }
+
 
 /******************************************
 /* ADDITIONAL STYLES
