@@ -61,6 +61,11 @@ body {
   overflow-x: hidden;
 }
 
+a {
+  color: var(--color-white);
+  text-decoration: none;
+}
+
 
 /******************************************
 /* LAYOUT
@@ -196,26 +201,39 @@ body {
   align-items: center;
   backdrop-filter: blur(104px);
   background: rgba(42,43,56,0.5);
-  border: 0.2rem solid #2A2B37;
-  border-radius: 2rem;
+  border: 0.15rem solid #2A2B37;
+  border-radius: 1.5rem;
   display: flex;
   justify-content: space-between;
   left: 0;
   margin: 0 auto;
-  padding: 2rem 4rem;
+  padding: 1rem 2.5rem;
   position: fixed;
   right: 0;
-  top: 5rem;
-  width: 50%;
+  top: 3rem;
+  width: 60%;
 }
 
 .nav-logo {
-  width: 2.5rem;
+  width: 3.25rem;
+}
+
+.nav-links {
+  align-items: center;
+  display: flex;
+  gap: 40px;
+  justify-content: flex-end;
 }
 
 .nav-links a {
   color: var(--color-gray);
   font-family: 'D-DIN Condensed', sans-serif;
+  font-size: 0.8rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+  color: var(--color-white);
 }
 
 /******************************************
