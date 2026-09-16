@@ -236,6 +236,49 @@ a {
   color: var(--color-white);
 }
 
+.nav-burger {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: none;
+  outline: none;
+}
+
+.nav-menu {
+  background: #050810;
+  color: var(--color-white);
+  height: 100vh;
+  left: -100vw;
+  overflow: hidden;
+  overflow-y: scroll;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.nav-menu.active {
+    left: 0;
+}
+
+@media screen and (max-width: 800px) {
+  .navbar {
+    border: 0.1rem solid #2A2B37;
+    border-radius: 1rem;
+    padding: 0.65rem 1rem;
+    top: 2rem;
+    width: 80%;
+  }
+  .nav-logo {
+    width: 2.5rem;
+  }
+  .nav-links {
+    display: none;
+  }
+  .nav-burger {
+    display: inline-block;
+  }
+}
+
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
