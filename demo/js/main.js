@@ -21,3 +21,15 @@ window.addEventListener('pointermove', (e) => {
   cursor.style.left = `${x}px`;
   cursor.style.top = `${y}px`;
 });
+
+// NAV MENU
+
+const navBurger = document.querySelector('#navBurger');
+const navMenu = document.querySelector('#navMenu');
+
+navBurger.addEventListener('click', toggleNavMenu);
+
+function toggleNavMenu(event) {
+  event.preventDefault();
+  navMenu.classList.toggle('active');
+}
