@@ -251,12 +251,13 @@ a {
   color: var(--color-white);
   display: flex;
   flex-direction: column;
+  gap: 3rem;
   height: 100vh;
   justify-content: center;
   left: -100vw;
   overflow: hidden;
   overflow-y: scroll;
-  padding: 6rem 2.5rem 0 2.5rem;
+  padding: 5rem 2.5rem 0 2.5rem;
   position: fixed;
   text-align: center;
   top: 0;
@@ -271,13 +272,14 @@ a {
 .nav-menu-socials {
   align-items: center;
   display: flex;
+  gap: 2rem;
   justify-content: space-between;
 }
 
 .nav-menu-socials a {
   color: var(--color-light-blue);
   font-family: 'D-DIN Condensed', sans-serif;
-  font-size: 3rem;
+  font-size: 1.5rem;
   font-weight: 100;
   letter-spacing: -0.03em;
   line-height: 92.4%;
@@ -290,7 +292,7 @@ a {
 
 .nav-menu-h4 {
   font-family: 'D-DIN Condensed', sans-serif;
-  font-size: 1.8rem;
+  font-size: 1rem;
   font-weight: 100;
   letter-spacing: 0.19em;
   line-height: 92.4%;
@@ -299,7 +301,7 @@ a {
 .nav-menu-cta {
   color: var(--color-white);
   font-family: 'Mark Pro', sans-serif;
-  font-size: 5rem;
+  font-size: 2.5rem;
   letter-spacing: -0.03rem;
   transition: all 0.3s ease-in-out;
 }
@@ -310,6 +312,40 @@ a {
 
 .nav-menu img {
   width: 50px;
+}
+
+.nav-menu-projects {
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.nav-menu-projects a {
+  font-family: 'Mark Pro', sans-serif;
+  font-size: 0.75rem;
+  height: 7.5rem;
+  letter-spacing: -0.085em;
+  line-height: 130%;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  /*width: 38.5rem;*/
+}
+
+.nav-menu-projects img {
+  border-radius: 1.5rem;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.3s ease-in-out;
+  width: 100%;
+}
+
+.nav-menu-projects h2 {
+  color: var(--color-white);
+  left: 10%;
+  position: absolute;
+  text-align: left;
+  top: 40%;
 }
 
 @media screen and (max-width: 800px) {
