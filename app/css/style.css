@@ -246,20 +246,70 @@ a {
 }
 
 .nav-menu {
+  align-items: center;
   background: #050810;
   color: var(--color-white);
+  display: flex;
+  flex-direction: column;
   height: 100vh;
+  justify-content: center;
   left: -100vw;
   overflow: hidden;
   overflow-y: scroll;
+  padding: 6rem 2.5rem 0 2.5rem;
   position: fixed;
+  text-align: center;
   top: 0;
-  transition: all 0.75s ease-in-out;
+  transition: all 0.5s ease-in-out;
   width: 100%;
 }
 
 .nav-menu.active {
     left: 0;
+}
+
+.nav-menu-socials {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-menu-socials a {
+  color: var(--color-light-blue);
+  font-family: 'D-DIN Condensed', sans-serif;
+  font-size: 3rem;
+  font-weight: 100;
+  letter-spacing: -0.03em;
+  line-height: 92.4%;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-menu-socials a:hover {
+  color: var(--color-white);
+}
+
+.nav-menu-h4 {
+  font-family: 'D-DIN Condensed', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 100;
+  letter-spacing: 0.19em;
+  line-height: 92.4%;
+}
+
+.nav-menu-cta {
+  color: var(--color-white);
+  font-family: 'Mark Pro', sans-serif;
+  font-size: 5rem;
+  letter-spacing: -0.03rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-menu-cta:hover {
+  color: var(--color-light-purple);
+}
+
+.nav-menu img {
+  width: 50px;
 }
 
 @media screen and (max-width: 800px) {
