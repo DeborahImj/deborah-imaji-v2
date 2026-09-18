@@ -556,6 +556,20 @@ a {
   }
 }
 
+
+/* PROJECTS SECTION */
+
+.projects-section {
+  padding: 10rem 6rem 0 6rem;
+}
+
+.heading-2 {
+  background-image: linear-gradient(90deg, #B0F3F1, #);
+  font-family: 'Mark Pro', sans-serif;
+  font-size: 5rem;
+  letter-spacing: -0.03em;
+}
+
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
