@@ -264,6 +264,7 @@ a {
   top: 0;
   transition: all 0.5s ease-in-out;
   width: 100%;
+  z-index: 5;
 }
 
 .nav-menu.active {
@@ -394,7 +395,40 @@ a {
   position: relative;
 }
 
-.home-section:before {}
+.home-section:before {
+  background-image: url('../assets/images/hand-left.webp');
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: "";
+  display: block;
+  height: 26rem;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 26rem;
+}
+
+
+.home-section:after {
+  background-image: url('../assets/images/hand-right.webp');
+  background-repeat: no-repeat;
+  background-size: contain;
+  /*bottom: 7rem;*/
+  content: "";
+  display: block;
+  height: 45rem;
+  position: absolute;
+  right: 0;
+  top: 7rem;
+  width: 25rem;
+  z-index: -1;
+}
+
+.home-wrapper {
+  padding: 15rem 6rem 0 6rem;
+}
+
+.hero-heading {}
 
 /******************************************
 /* ADDITIONAL STYLES
