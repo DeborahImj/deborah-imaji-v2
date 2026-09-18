@@ -257,7 +257,7 @@ a {
   left: -100vw;
   overflow: hidden;
   overflow-y: scroll;
-  padding: 5rem 2.5rem 0 2.5rem;
+  padding: 5rem 2rem 0 2rem;
   position: fixed;
   text-align: center;
   top: 0;
@@ -323,17 +323,36 @@ a {
 
 .nav-menu-projects a {
   font-family: 'Mark Pro', sans-serif;
-  font-size: 0.75rem;
+  font-size: 0.6rem;
   height: 7.5rem;
   letter-spacing: -0.085em;
   line-height: 130%;
   position: relative;
   transition: all 0.3s ease-in-out;
-  /*width: 38.5rem;*/
+}
+
+.nav-menu-projects a:hover {
+  transform: scale(1.1);
+}
+
+.nav-menu-projects a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+  transition: background 0.3s ease;
+}
+
+.nav-menu-projects a:hover::before {
+  background: rgba(0, 0, 0, 0.7);
 }
 
 .nav-menu-projects img {
-  border-radius: 1.5rem;
+  border-radius: 1.15rem;
   height: 100%;
   object-fit: cover;
   transition: all 0.3s ease-in-out;
@@ -342,10 +361,10 @@ a {
 
 .nav-menu-projects h2 {
   color: var(--color-white);
-  left: 10%;
+  left: 15%;
   position: absolute;
-  text-align: left;
-  top: 40%;
+  top: 35%;
+  z-index: 2;
 }
 
 @media screen and (max-width: 800px) {
