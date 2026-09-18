@@ -56,6 +56,7 @@
 
 body {
   background: #000;
+  color: var(--color-white);
   font-family: 'Circular Std Book', sans-serif;
   font-size: 1.6rem;
   overflow-x: hidden;
@@ -385,6 +386,15 @@ a {
     display: inline-block;
   }
 }
+
+
+/* HOME SECTION */
+
+.home-section {
+  position: relative;
+}
+
+.home-section:before {}
 
 /******************************************
 /* ADDITIONAL STYLES
