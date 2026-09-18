@@ -428,7 +428,49 @@ a {
   padding: 15rem 6rem 0 6rem;
 }
 
-.hero-heading {}
+.home-heading {
+  color: var(--color-white);
+  font-family: 'Mark Pro', sans-serif;
+  font-size: 9rem;
+  letter-spacing: -0.03em;
+  line-height: 100%;
+}
+
+.home-gradient {
+  background: linear-gradient(-45deg, var(--color-light-blue), var(--color-light-purple), var(--color-light-blue), var(--color-light-purple));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 400% 400%;
+  animation: gradient 3s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  } 50% {
+    background-position: 100% 50%;
+  } 100% {
+    background-position: 0% 50%;
+  }
+}
+
+.home-desc {
+  color: var(--color-gray);
+  font-size: 1.7rem;
+  line-height: 130.4%;
+}
+
+.hero-projects {
+  border-bottom: 1px solid var(--color-gray);
+  color: var(--color-gray);
+  display: inline-block;
+  font-family: 'D-DIN Condensed', sans-serif;
+  font-size: 1.8rem;
+  letter-spacing: 0.19em;
+  line-height: 92.4%;
+  margin: 13rem 0 0 0;
+}
 
 /******************************************
 /* ADDITIONAL STYLES
