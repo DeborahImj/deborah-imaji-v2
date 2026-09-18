@@ -401,11 +401,11 @@ a {
   background-size: contain;
   content: "";
   display: block;
-  height: 26rem;
+  height: 22rem;
   left: 0;
   position: absolute;
   top: 0;
-  width: 26rem;
+  width: 22rem;
 }
 
 
@@ -416,22 +416,22 @@ a {
   /*bottom: 7rem;*/
   content: "";
   display: block;
-  height: 45rem;
+  height: 40rem;
   position: absolute;
   right: 0;
-  top: 7rem;
-  width: 25rem;
+  top: 12.5rem;
+  width: 20rem;
   z-index: -1;
 }
 
 .home-wrapper {
-  padding: 15rem 6rem 0 6rem;
+  padding: 12.5rem 6rem 0 6rem;
 }
 
 .home-heading {
   color: var(--color-white);
   font-family: 'Mark Pro', sans-serif;
-  font-size: 9rem;
+  font-size: 4.5rem;
   letter-spacing: -0.03em;
   line-height: 100%;
 }
@@ -457,19 +457,42 @@ a {
 
 .home-desc {
   color: var(--color-gray);
-  font-size: 1.7rem;
+  font-size: 1.25rem;
   line-height: 130.4%;
+  width: 41%;
 }
 
-.hero-projects {
-  border-bottom: 1px solid var(--color-gray);
+.home-projects {
+  border-bottom: 1.25px solid var(--color-gray);
   color: var(--color-gray);
   display: inline-block;
   font-family: 'D-DIN Condensed', sans-serif;
-  font-size: 1.8rem;
+  font-size: 1.25rem;
   letter-spacing: 0.19em;
   line-height: 92.4%;
-  margin: 13rem 0 0 0;
+  margin: 5rem 0 0 0;
+  padding: 0 0 0.5rem 0;
+}
+
+.home-socials {
+  align-items: center;
+  display: flex;
+  gap: 2rem;
+  justify-content: flex-end;
+  margin: 2rem 0 0 0;
+  width: 100%;
+}
+
+.home-socials a {
+  color: var(--color-gray);
+  font-family: 'D-DIN Condensed', sans-serif;
+  letter-spacing: -0.03em;
+  line-height: 92.4%;
+  transition: all 0.3s ease-in-out;
+}
+
+.home-socials a:hover {
+  color: var(--color-white);
 }
 
 /******************************************
