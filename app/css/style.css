@@ -560,14 +560,47 @@ a {
 /* PROJECTS SECTION */
 
 .projects-section {
-  padding: 10rem 6rem 0 6rem;
+  padding: 4rem 6rem 0 6rem;
 }
 
 .heading-2 {
-  background-image: linear-gradient(90deg, #B0F3F1, #);
   font-family: 'Mark Pro', sans-serif;
-  font-size: 5rem;
+  font-size: 3rem;
   letter-spacing: -0.03em;
+}
+
+.heading-2 span {
+  background-image: linear-gradient(90deg, #B0F3F1, #FFCFDF);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.section-paragraph {
+  color: var(--color-gray);
+  font-size: 1.15rem;
+}
+
+.project-card {
+  align-items: center;
+  backdrop-filter: blur(54px);
+  -webkit-backdrop-filter: blur(54px);
+  background: linear-gradient(180deg, rgba(35,37,49,0.5), rgba(15,15,24,0.5));
+  border: 0.2rem solid #20222E;
+  border-radius: 7.3rem;
+  display: flex;
+  margin: 10rem auto;
+  padding: 6rem;
+  position: relative;
+  width: 80%;
+}
+
+@media screen and (max-width: 800px) {
+  .project-card {
+    border-radius: 6.3rem;
+    flex-direction: column;
+    width: 70%;
+  }
 }
 
 /******************************************
