@@ -587,12 +587,13 @@ a {
   -webkit-backdrop-filter: blur(54px);
   background: linear-gradient(180deg, rgba(35,37,49,0.5), rgba(15,15,24,0.5));
   border: 0.2rem solid #20222E;
-  border-radius: 7.3rem;
+  border-radius: 5rem;
   display: flex;
+  justify-content: flex-start;
   margin: 10rem auto;
-  padding: 4rem 2.5rem;
+  padding: 3.5rem 2.5rem;
   position: relative;
-  width: 80%;
+  width: 82.5%;
 }
 
 .project-card:first-of-type:before {
@@ -614,25 +615,52 @@ a {
   display: block;
   height: 9rem;
   position: absolute;
-  right: -3rem;
-  top: -5rem;
+  right: -2rem;
+  top: -3rem;
   width: 9rem;
 }
 
 .project-card-h4 {
   color: #8B8B8B;
   font-family: 'D-DIN Condensed', sans-serif;
-  font-size: 1.25rem;
+  font-size: 1rem;
   letter-spacing: 0.19em;
   transform: rotate(-90deg);
 }
 
 .project-card-middle {
-  border-radius: 2rem;
-  height: 30rem;
+  border-radius: 3.5rem;
+  height: 25rem;
   overflow: hidden;
   position: relative;
-  width: 17.5rem;
+  width: 19rem;
+}
+
+.project-card-images {
+  filter: url(#filter-0);
+  inset: 0;
+  position: absolute;
+}
+
+.project-card-images img {
+  height: 100%;
+  inset: 0;
+  object-fit: cover;
+  position: absolute;
+  transition: opacity 0.7s ease;
+  width: 100%;
+}
+
+.img-b {
+  opacity: 0;
+}
+
+.project-card-middle:hover .img-b {
+  opacity: 1;
+}
+
+.project-card-middle:hover .img-a {
+  opacity: 0;
 }
 
 /******************************************
