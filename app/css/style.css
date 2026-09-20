@@ -749,14 +749,42 @@ a {
     font-size: 0.9rem;
   }
   .project-card {
+    align-items: flex-start;
+    border: 0.125rem solid #20222E;
+    border-radius: 2.25rem;
     flex-direction: column;
     justify-content: center;
-    width: 90%;
+    padding: 2.15rem 1.75rem;
+    width: 88.5%;
   }
   .project-card:before {
     height: 6rem;
     right: -1rem;
+    top: -2rem;
     width: 6rem;
+  }
+  .project-card-h4 {
+    display: none;
+  }
+  .project-card-middle {
+    border-radius: 1.5rem;
+    height: 18.5rem;
+    margin: 0 0 1.5rem 0;
+    width: 100%;
+  }
+  .project-card-right {
+    margin: 0;
+  }
+  .project-card-right h3 {
+    font-size: 2rem;
+    margin: 0 0 1.25rem 0;
+  }
+  .project-card-link {
+    font-size: 0.9rem;
+    margin: 0 0 2.5rem 0;
+  }
+  .project-card-right img {
+    width: 1.75rem;
   }
 }
 
