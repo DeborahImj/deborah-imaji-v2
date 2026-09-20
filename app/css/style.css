@@ -663,6 +663,39 @@ a {
   opacity: 0;
 }
 
+.project-card-right h3 {
+  font-family: 'Mark Pro', sans-serif;
+  font-size: 4.2rem;
+  letter-spacing: -0.03em;
+  line-height: 105%;
+  margin: 0 0 6rem 0;
+  animation: gradient 3s ease-in-out infinite;
+}
+
+.project1 .project-card-right h3 {
+  background: linear-gradient(-45deg, #63898A, #9FBCBF, var(--color-white), var(--color-white));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 400% 400%;
+}
+
+.project2 .project-card-right h3 {
+  background: linear-gradient(-45deg, #FBB034, #FD0, var(--color-white), var(--color-white));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 400% 400%;
+}
+
+.project3 .project-card-right h3 {
+  background: linear-gradient(-45deg, #045DE9, #09C6F9, var(--color-white), var(--color-white));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 400% 400%;
+}
+
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
