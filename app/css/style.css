@@ -801,13 +801,44 @@ a {
   align-items: center;
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 2.5rem 2.5rem;
   justify-content: center;
-  margin: 4rem 0 0 0;
+  margin: 6rem 0 0 0;
 }
 
 .service-card {
-  width: calc(50% - 0.5rem);
+  background: #171E2F;
+  border: 0.125rem solid #20222E;
+  border-radius: 2.5rem;
+  padding: 1.5rem 2.5rem;
+  transition: all 0.5s ease-in-out;
+  width: calc(50% - 1.5rem);
+}
+
+.service-card:hover {
+  transform: scale(1.1);
+}
+
+.service-card-top {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.service-card-top h3 {
+  color: var(--color-gray);
+  font-family: 'D-DIN Condensed', sans-serif;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  
+}
+
+.service-card-top img {
+  width: 6rem;
+}
+
+.service-card-desc {
+  font-size: 1rem;
 }
 
 /******************************************
