@@ -591,9 +591,9 @@ a {
   display: flex;
   justify-content: flex-start;
   margin: 10rem auto;
-  padding: 3.5rem 2.5rem;
+  padding: 4rem 2.5rem;
   position: relative;
-  width: 82.5%;
+  width: 89%;
 }
 
 .project-card:first-of-type:before {
@@ -625,7 +625,8 @@ a {
   font-family: 'D-DIN Condensed', sans-serif;
   font-size: 1rem;
   letter-spacing: 0.19em;
-  transform: rotate(-90deg);
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
 }
 
 .project-card-middle {
@@ -663,6 +664,14 @@ a {
   opacity: 0;
 }
 
+.project-card-right {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 0 0 2rem;
+}
+
 .project-card-right h3 {
   font-family: 'Mark Pro', sans-serif;
   font-size: 4.2rem;
@@ -694,6 +703,29 @@ a {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-size: 400% 400%;
+}
+
+.project-card-link {
+  font-family: 'D-DIN Condensed', sans-serif;
+  font-size: 1.8rem;
+  letter-spacing: 0.19em;
+  line-height: 92.4%;
+}
+
+.project1 .project-card-link {
+  color: #6B9796;
+}
+
+.project2 .project-card-link {
+  color: #E6972F;
+}
+
+.project3 .project-card-link {
+  color: #57A3C7;
+}
+
+.project-card-right a {
+  
 }
 
 /******************************************
