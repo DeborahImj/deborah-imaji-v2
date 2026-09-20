@@ -56,3 +56,5 @@ document.querySelectorAll('.project-card-middle').forEach(card => {
   card.addEventListener('mouseenter', () => animateScale(0, 70, 350));
   card.addEventListener('mouseleave', () => animateScale(70, 0, 350));
 });
+
+
