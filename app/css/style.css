@@ -591,9 +591,9 @@ a {
   display: flex;
   justify-content: flex-start;
   margin: 10rem auto;
-  padding: 4rem 2.5rem;
+  padding: 4rem 3rem;
   position: relative;
-  width: 89%;
+  width: 85%;
 }
 
 .project-card:first-of-type:before {
@@ -678,7 +678,7 @@ a {
   font-size: 2.75rem;
   letter-spacing: -0.03em;
   line-height: 105%;
-  margin: 0 0 4rem 0;
+  margin: 0 0 3rem 0;
   padding: 0 0 0.5rem 0;
   animation: gradient 3s ease-in-out infinite;
 }
@@ -708,10 +708,14 @@ a {
 }
 
 .project-card-link {
+  border-bottom: 1.25px solid var(--color-gray);
   font-family: 'D-DIN Condensed', sans-serif;
-  font-size: 1.25rem;
+  font-size: 1.15rem;
   letter-spacing: 0.19em;
   line-height: 92.4%;
+  margin: 0 0 5.5rem 0;
+  padding: 0 0 0.4rem 0;
+  transition: all 0.3s ease-in-out;
 }
 
 .project1 .project-card-link {
@@ -726,8 +730,34 @@ a {
   color: #57A3C7;
 }
 
-.project-card-right a {
-  
+.project-card-link:hover {
+  color: var(--color-white);
+}
+
+.project-card-right img {
+  width: 2rem;
+}
+
+@media screen and (max-width: 800px) {
+  .projects-section {
+    padding: 4rem 2rem 0 2rem;
+  }
+  .heading-2 {
+    font-size: 2rem;
+  }
+  .section-paragraph {
+    font-size: 0.9rem;
+  }
+  .project-card {
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+  }
+  .project-card:before {
+    height: 6rem;
+    right: -1rem;
+    width: 6rem;
+  }
 }
 
 /******************************************
