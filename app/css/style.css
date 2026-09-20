@@ -373,7 +373,7 @@ a {
     border: 0.1rem solid #2A2B37;
     border-radius: 1rem;
     padding: 0.65rem 1rem;
-    top: 2.5rem;
+    top: 2.25rem;
     width: 70%;
   }
   .nav-logo {
@@ -754,7 +754,8 @@ a {
     border-radius: 2.25rem;
     flex-direction: column;
     justify-content: center;
-    padding: 2.15rem 1.75rem;
+    margin: 6.5rem auto 7.5rem auto;
+    padding: 2.15rem 1.75rem 2rem 1.75rem;
     width: 88.5%;
   }
   .project-card:before {
@@ -781,12 +782,13 @@ a {
   }
   .project-card-link {
     font-size: 0.9rem;
-    margin: 0 0 2.5rem 0;
+    margin: 0 0 2rem 0;
   }
   .project-card-right img {
-    width: 1.75rem;
+    width: 1.5rem;
   }
 }
+
 
 /******************************************
 /* ADDITIONAL STYLES
