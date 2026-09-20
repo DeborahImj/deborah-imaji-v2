@@ -794,23 +794,22 @@ a {
 
 .services-section {
   background: #050810;
-  padding: 4rem 6rem 4rem 6rem;
+  padding: 4rem 6rem 7rem 6rem;
 }
 
 .service-gallery {
   align-items: center;
   display: flex;
   flex-wrap: wrap;
-  gap: 2.5rem 2.5rem;
+  gap: 2.5rem;
   justify-content: center;
   margin: 6rem 0 0 0;
 }
 
 .service-card {
   background: #171E2F;
-  border: 0.125rem solid #20222E;
   border-radius: 2.5rem;
-  padding: 1.5rem 2.5rem;
+  padding: 1.5rem 2.25rem;
   transition: all 0.5s ease-in-out;
   width: calc(50% - 1.5rem);
 }
@@ -839,6 +838,31 @@ a {
 
 .service-card-desc {
   font-size: 1rem;
+}
+
+@media screen and (max-width: 800px) {
+  .services-section {
+    padding: 3rem 2rem 7rem 2rem;
+  }
+  .service-gallery {
+    flex-direction: column;
+    gap: 1.25rem;
+    justify-content: flex-start;
+    margin: 3rem 0 0 0;
+  }
+  .service-card {
+    padding: 1rem 1.5rem;
+    width: 100%;
+  }
+  .service-card-top h3 {
+    font-size: 1.25rem;
+  }
+  .service-card-top img {
+    width: 4.5rem;
+  }
+  .service-card-desc {
+    font-size: 0.9rem;
+  }
 }
 
 /******************************************
