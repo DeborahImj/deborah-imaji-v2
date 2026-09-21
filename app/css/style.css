@@ -922,6 +922,48 @@ a {
   }
 }
 
+
+/* CONTACT SECTION */
+.contact-section {
+  padding: 4rem 6rem 4rem 6rem;
+  text-align: center;
+}
+
+.contact-section .section-paragraph {
+  font-size: 1.25rem;
+}
+
+.contact-p {
+  color: var(--color-gray);
+  font-size: 1.35rem;
+  line-height: 150%;
+  margin: 4rem 0 4rem 0;
+}
+
+.contact-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin: 0 auto;
+  width: 80%;
+}
+
+.contact-form input, .contact-form textarea {
+  background: #171E2F;
+  border: none;
+  color: var(--color-white);
+  padding: 1.5rem 2rem;
+}
+
+.contact-form #name, .contact-form #email {
+  width: calc(50% - 1rem);
+}
+
+.contact-form #message {
+  width: 100%;
+}
+
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
