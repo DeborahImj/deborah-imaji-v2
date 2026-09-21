@@ -847,7 +847,7 @@ a {
 
 @media screen and (max-width: 800px) {
   .services-section {
-    padding: 3rem 2rem 7rem 2rem;
+    padding: 3rem 2rem 5rem 2rem;
   }
   .service-gallery {
     flex-direction: column;
@@ -902,6 +902,24 @@ a {
 
 .about-right img:hover {
   transform: scale(1.05);
+}
+
+@media screen and (max-width: 800px) {
+  .about-section {
+    flex-direction: column-reverse;
+    gap: 1rem;
+    justify-content: flex-start;
+    padding: 4.5rem 2rem 4rem 2rem;
+  }
+  .about-left {
+    width: 100%;
+  }
+  .about-section .section-paragraph {
+    font-size: 1rem;
+  }
+  .about-right {
+    width: 50%;
+  }
 }
 
 /******************************************
