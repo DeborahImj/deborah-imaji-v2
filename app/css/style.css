@@ -593,7 +593,12 @@ a {
   margin: 10rem auto;
   padding: 4rem 3rem;
   position: relative;
+  transition: all 0.3s ease-in-out;
   width: 85%;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
 }
 
 .project-card:first-of-type:before {
@@ -871,28 +876,32 @@ a {
 .about-section {
   align-items: center;
   display: flex;
-  gap: 3rem;
+  gap: 5rem;
   justify-content: space-between;
-  padding: 4rem 6rem 0 6rem;
+  padding: 6rem 6rem 6rem 6rem;
 }
 
 .about-left {
-  width: calc(70% - 1.5rem);
+  width: calc(65% - 2.5rem);
 }
 
-.about-desc {
-  color: var(--color-gray);
-  font-size: 2rem;
-  line-height: 130%;
+.about-section .section-paragraph {
+  font-size: 1.5rem;
+  line-height: 150%;
 }
 
 .about-right {
-  width: calc(30% - 1.5rem);
+  width: calc(35% - 2.5rem);
 }
 
 .about-right img {
   border-radius: 3rem;
+  transition: all 0.3s ease-in-out;
   width: 100%;
+}
+
+.about-right img:hover {
+  transform: scale(1.05);
 }
 
 /******************************************
