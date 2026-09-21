@@ -306,6 +306,23 @@
       <p class="contact-p">
         Email me at: <a href="mailto:deborahimajieng@gmail.com" target="_blank"><strong>deborahimajieng@gmail.com</strong></a>
       </p>
+      <p class="contact-p">
+        Or send me a quick message here:
+      </p>
+
+      <form name="contact" method="POST" data-netlify="true" class="contact-form">
+  <input type="hidden" name="form-name" value="contact" />
+
+  <input type="text" id="name" name="name" required placeholder="Name" />
+
+  <input type="email" id="email" name="email" required placeholder="Email" />
+
+  <textarea id="message" name="message" rows="5" required placeholder="Leave a message"></textarea>
+
+  <button type="submit">Send Message</button>
+</form>
+
+<p class="form-status" aria-live="polite"></p>
     </section>
     
 		<script type="text/javascript" src="js/main.js"></script>
