@@ -865,6 +865,36 @@ a {
   }
 }
 
+
+/* ABOUT SECTION */
+
+.about-section {
+  align-items: center;
+  display: flex;
+  gap: 3rem;
+  justify-content: space-between;
+  padding: 4rem 6rem 0 6rem;
+}
+
+.about-left {
+  width: calc(70% - 1.5rem);
+}
+
+.about-desc {
+  color: var(--color-gray);
+  font-size: 2rem;
+  line-height: 130%;
+}
+
+.about-right {
+  width: calc(30% - 1.5rem);
+}
+
+.about-right img {
+  border-radius: 3rem;
+  width: 100%;
+}
+
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
