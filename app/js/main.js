@@ -34,27 +34,5 @@ function toggleNavMenu(event) {
   navMenu.classList.toggle('active');
 }
 
-// PROJECT IMAGES HOVER EFFECT
-
-document.querySelectorAll('.project-card-middle').forEach(card => {
-  const filterId = card.dataset.filterId;
-  const map = document.querySelector(`#${filterId} feDisplacementMap`);
-  let raf;
-
-  function animateScale(from, to, duration) {
-    cancelAnimationFrame(raf);
-    const start = performance.now();
-    function tick(now) {
-      const t = Math.min((now - start) / duration, 1);
-      const value = from + (to - from) * t;
-      map.setAttribute('scale', value);
-      if (t < 1) raf = requestAnimationFrame(tick);
-    }
-    raf = requestAnimationFrame(tick);
-  }
-
-  card.addEventListener('mouseenter', () => animateScale(0, 70, 350));
-  card.addEventListener('mouseleave', () => animateScale(70, 0, 350));
-});
 
 
