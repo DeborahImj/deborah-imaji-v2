@@ -34,5 +34,34 @@ function toggleNavMenu(event) {
   navMenu.classList.toggle('active');
 }
 
+// CONTACT FORM
 
+const form = document.querySelector('.contact-form');
+const status = document.querySelector('.form-status');
+
+form.addEventListener('submit', async (e) => {
+  e.preventDefault();
+
+  const data = new FormData(form);
+
+  try {
+    const response = await fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: new URLSearchParams(data).toString()
+    });
+
+    if (response.ok) {
+      form.reset();
+      status.textContent = "Thanks. Your message has been sent. I'll get back to you soon!";
+      status.style.color = 'lightgreen';
+    } else {
+      status.textContent = "Something went wrong. Please try again.";
+      status.style.color = 'salmon';
+    }
+  } catch (err) {
+    status.textContent = "Something went wrong. Please check your connection and try again.";
+    status.style.color = 'salmon';
+  }
+});
 
