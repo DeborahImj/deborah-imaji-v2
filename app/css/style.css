@@ -1056,6 +1056,29 @@ a {
   color: var(--color-light-blue);
 }
 
+@media screen and (max-width: 800px) {
+  .footer {
+    align-items: center;
+    flex-direction: column-reverse;
+    gap: 0.5rem;
+    justify-content: center;
+    padding: 2.75rem 2rem 1.5rem 2rem;
+  }
+  .footer-left img {
+    margin: 0 0.15rem 0 0;
+    width: 1.25rem;
+  }
+  .footer-left p {
+    font-size: 0.7rem;
+  }
+  .footer-right {
+    gap: 1.75rem;
+  }
+  .footer-right a {
+    font-size: 1rem;
+  }
+}
+
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
