@@ -925,7 +925,7 @@ a {
 
 /* CONTACT SECTION */
 .contact-section {
-  padding: 4rem 6rem 4rem 6rem;
+  padding: 4rem 6rem 6rem 6rem;
   text-align: center;
 }
 
@@ -978,6 +978,82 @@ a {
 
 .contact-form button:hover {
   transform: scale(1.1);
+}
+
+@media screen and (max-width: 800px) {
+  .contact-section {
+    padding: 1rem 2rem 3rem 2rem;
+  }
+  .contact-section .section-paragraph {
+    font-size: 1.05rem;
+    width: 100%;
+  }
+  .contact-p {
+    font-size: 1.15rem;
+    margin: 3rem 0 2rem 0;
+  }
+  .contact-form {
+    gap: 1rem;
+    width: 100%;
+  }
+  .contact-form #name, .contact-form #email {
+    width: 100%;
+  }
+  .contact-form input, .contact-form textarea {
+    font-size: 1rem;
+    padding: 1rem 1rem;
+  }
+  .contact-form button {
+    font-size: 0.9rem;
+    padding: 1.25rem 0;
+    margin: 2rem 0 0 0;
+    width: 100%;
+  }
+}
+
+
+/* FOOTER */
+
+.footer {
+  align-items: center;
+  background: linear-gradient(180deg, rgba(35,37,49,0.5), rgba(15,15,24,0.5));
+  border-top: 0.025rem solid #20222E;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.75rem 6rem;
+}
+
+.footer-left {
+  align-items: center;
+  display: flex;
+}
+
+.footer-left img {
+  margin: 0 1rem 0 0;
+  width: 2.5rem;
+}
+
+.footer-left p {
+  color: var(--color-gray);
+  font-size: 1.15rem;
+}
+
+.footer-right {
+  align-items: center;
+  display: flex;
+  gap: 2rem;
+  justify-content: flex-end;
+}
+
+.footer-right a {
+  color: var(--color-gray);
+  font-family: 'D-DIN Condensed', sans-serif;
+  font-size: 1.15rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.footer-right a:hover {
+  color: var(--color-light-blue);
 }
 
 /******************************************
