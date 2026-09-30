@@ -691,7 +691,7 @@ a {
 }
 
 .project1 .project-card-right h3 {
-  background: linear-gradient(-45deg, #63898A, #9FBCBF, var(--color-white), var(--color-white), var(--color-white));
+  background: linear-gradient(-45deg, #F2BCC9, #ABB18F, var(--color-white), var(--color-white), var(--color-white));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -726,7 +726,7 @@ a {
 }
 
 .project1 .project-card-link {
-  color: #6B9796;
+  color: #ABB18F;
 }
 
 .project2 .project-card-link {
